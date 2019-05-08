@@ -1,0 +1,41 @@
+INFO 2019-05-08 17:01:16,232 { module name : _internal Line no : 87}  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO 2019-05-08 17:01:16,235 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2019-05-08 17:01:16,714 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2019-05-08 17:01:16,731 { module name : _internal Line no : 87}  * Debugger PIN: 161-742-747
+INFO 2019-05-08 17:01:28,485 { module name : _internal Line no : 87}  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO 2019-05-08 17:01:28,486 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2019-05-08 17:01:28,979 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2019-05-08 17:01:28,997 { module name : _internal Line no : 87}  * Debugger PIN: 161-742-747
+INFO 2019-05-08 17:02:23,055 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:02:23] "GET / HTTP/1.1" 200 -
+INFO 2019-05-08 17:02:24,358 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:02:24] "GET /about HTTP/1.1" 200 -
+INFO 2019-05-08 17:02:24,837 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:02:24] "GET /home HTTP/1.1" 200 -
+INFO 2019-05-08 17:02:25,357 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:02:25] "GET /login HTTP/1.1" 200 -
+INFO 2019-05-08 17:02:25,961 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:02:25] "GET /register HTTP/1.1" 200 -
+INFO 2019-05-08 17:02:27,524 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:02:27] "GET /login HTTP/1.1" 200 -
+INFO 2019-05-08 17:02:28,414 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:02:28] "GET /about HTTP/1.1" 200 -
+INFO 2019-05-08 17:03:52,503 { module name : _internal Line no : 87}  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO 2019-05-08 17:03:52,504 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2019-05-08 17:03:52,982 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2019-05-08 17:03:52,999 { module name : _internal Line no : 87}  * Debugger PIN: 161-742-747
+INFO 2019-05-08 17:04:06,581 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:04:06] "GET / HTTP/1.1" 200 -
+INFO 2019-05-08 17:07:24,117 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:07:24] "GET /login HTTP/1.1" 200 -
+INFO 2019-05-08 17:07:27,438 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:07:27] "POST /login HTTP/1.1" 200 -
+INFO 2019-05-08 17:07:48,252 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:07:48] "GET /register HTTP/1.1" 200 -
+INFO 2019-05-08 17:07:58,048 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:07:58] "POST /register HTTP/1.1" 200 -
+INFO 2019-05-08 17:08:07,006 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:08:07] "GET /home HTTP/1.1" 200 -
+INFO 2019-05-08 17:08:07,691 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:08:07] "GET /about HTTP/1.1" 200 -
+INFO 2019-05-08 17:08:31,136 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:08:31] "GET /home HTTP/1.1" 200 -
+INFO 2019-05-08 17:08:37,945 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:08:37] "GET /home HTTP/1.1" 200 -
+INFO 2019-05-08 17:08:40,022 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:08:40] "GET / HTTP/1.1" 200 -
+INFO 2019-05-08 17:08:40,963 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:08:40] "GET /about HTTP/1.1" 200 -
+INFO 2019-05-08 17:08:41,825 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:08:41] "GET /login HTTP/1.1" 200 -
+INFO 2019-05-08 17:08:42,193 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:08:42] "GET /login HTTP/1.1" 200 -
+INFO 2019-05-08 17:08:57,635 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:08:57] "GET /home HTTP/1.1" 200 -
+INFO 2019-05-08 17:08:59,856 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:08:59] "GET /register HTTP/1.1" 200 -
+INFO 2019-05-08 17:09:02,713 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:09:02] "GET /login HTTP/1.1" 200 -
+INFO 2019-05-08 17:09:03,504 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:09:03] "GET /login HTTP/1.1" 200 -
+INFO 2019-05-08 17:09:53,911 { module name : _internal Line no : 87} 127.0.0.1 - - [08/May/2019 17:09:53] "GET / HTTP/1.1" 200 -
+INFO 2019-05-08 17:15:26,547 { module name : _internal Line no : 87}  * Detected change in '/Users/bardiabarahman/Desktop/8x8TakeHome/flaskProj/__init__.py', reloading
+INFO 2019-05-08 17:15:26,663 { module name : _internal Line no : 87}  * Restarting with stat
+WARNING 2019-05-08 17:15:28,732 { module name : _internal Line no : 87}  * Debugger is active!
+INFO 2019-05-08 17:15:28,748 { module name : _internal Line no : 87}  * Debugger PIN: 161-742-747
