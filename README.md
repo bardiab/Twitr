@@ -19,7 +19,7 @@ After downloading the project, in order to get the server up and running on your
 
 1. Check to see if conda is installed
 ```
-conda -v
+conda -V
 ```
 2. If not, run
 ```
