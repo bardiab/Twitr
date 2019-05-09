@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session, g
 from flask_sqlalchemy import SQLAlchemy
+from functools import wraps
+import jwt
 import logging
 from logr import *
 
@@ -13,11 +15,22 @@ db = SQLAlchemy(app)
 # Must import the models after we create the database
 from models import *
 
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if 'logged_in' in session:
+            return f(*args, **kwargs)
+        else:
+            flash('Please log in first!', 'info')
+            return redirect(url_for('login'))
+    return decorated_function
+
 @app.route('/')
 def welcome():
     return render_template('welcome.html')
 
 @app.route('/home')
+@login_required
 def home():
     posts = db.session.query(Post).all()
     return render_template('home.html', posts=posts)
@@ -49,6 +62,7 @@ def post():
     return render_template('post.html')
 
 @app.route('/logout')
+@login_required
 def logout():
     session.pop('logged_in', None)
     flash('Successfully logged out.', 'info')
