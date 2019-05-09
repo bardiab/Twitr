@@ -52,7 +52,7 @@ From there you can log in to the website and view posts using username 'bardia' 
 ### Requirements
 
 - **Completeness**: Wrote multiple API endpoints, wrote multiple tests covering these endpoints, used git for version control, and also stored both my website data and log data in a sql database using SQLAlchemy.
-- **Correctness**: Basic functionality works as expected
+- **Correctness**: Basic functionality works as expected, except as I expanded the project, I realized that my test breaks because of circular imports, and realized that in order to remedy the issue I would likely have to refractor my entire project structure. After some unsuccessful debugging I decide in the interest of time I would submit first and attempt to fix it later.
 - **Reasoning**: In order to tackle such a vague project on something I don't have much experience, I set about doing some research and settled on using Flask to build my app in. After reading up on the documentation and looking into some basic guides, I was able to get my app up and running.
 
 ### Built With
