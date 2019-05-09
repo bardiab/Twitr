@@ -11,6 +11,7 @@ Create a virtualenv and please make sure that you have all the dependencies list
 I built a small app to show posts(twits) by a user, built in python using the Flask framework. I have never worked with Flask before, so it was an interesting challenge. There are different API endpoints when navigating the site, and anytime an action is performed by the user, this is logged into a table called "Log" and located in the posts.db file.
 
 When finished navigating the application, logs may be viewed under the "Log" table in a sql visualizer of your choosing.
+The log database has rows for logger, level, trace, msg, and when the log was created.
 
 ### Installing
 
@@ -20,10 +21,7 @@ After downloading the project, in order to get the server up and running on your
 python app.py
 ```
 
-From there you can log in to the website and view posts using:
-'''username 'bardia'
-password 'lol'
-'''
+From there you can log in to the website and view posts using username 'bardia' and password 'lol'.
 
 
 ### Requirements
