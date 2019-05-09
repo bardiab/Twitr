@@ -14,8 +14,33 @@ When finished navigating the application, logs may be viewed under the "Log" tab
 
 ### Installing
 
-After downloading the project, in order to get the server up and running on your local host, run:
+After downloading the project, in order to get the server up and running on your local host, first setup a virtual environment from the base Twitr directory:
 
+1. Check to see if conda is installed
+```
+conda -v
+```
+2. If not, run
+```
+pip install conda
+```
+
+3. Create a virtual environment
+```
+conda create -n yourenvname python=3.6.3 anaconda
+```
+
+4. Activate virtual environment
+```
+source activate yourenvname
+```
+
+5. Make sure you have all packages required
+```
+pip install -r /path/to/requirements.txt
+```
+
+6. Now, in order to get the app up and running run:
 ```
 python app.py
 ```
