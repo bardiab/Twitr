@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session, g
 from flask_sqlalchemy import SQLAlchemy
-#import sqlite3
 import logging
-from logging.config import dictConfig
 from logr import *
 
 app = Flask(__name__)
@@ -61,39 +59,11 @@ def logout():
     return redirect(url_for('welcome'))
 
 
-# logging_config = dict(
-#     version=1,
-#     formatters={
-#         'simple': {'format':'%(levelname)s - %(asctime)s %(message)s'}
-#     },
-#     handlers={
-#         'console': {
-#             'class': 'logging.handlers.RotatingFileHandler',
-#             'filename': 'logger.log',
-#             'maxBytes': 1024 * 1024 * 5,
-#             'backupCount': 5,
-#             'level': 'DEBUG',
-#             'formatter': 'simple',
-#             'encoding': 'utf8'
-#             }
-#     },
-#
-#     root={
-#         'handlers': ['console'],
-#         'level': logging.DEBUG,
-#     },
-# )
-
 from flask_wtf.csrf import CSRFProtect
 import traceback
 import logging
-# from logr import SQLAlchemyHandler
-import os
-
-
 
 if __name__ == '__main__':
-    #dictConfig(logging_config)
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
 
@@ -104,7 +74,11 @@ if __name__ == '__main__':
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     ch.setFormatter(formatter)
 
-    loggers = [logger, logging.getLogger('werkzeug'),  logging.getLogger('sqlalchemy'), logging.getLogger('flask.app')]
+    loggers = [logger,
+               logging.getLogger('werkzeug'),
+               logging.getLogger('sqlalchemy'),
+               logging.getLogger('flask.app')]
+
     #add ch to logger
     for l in loggers:
         l.addHandler(ch)

@@ -44,6 +44,12 @@ class FlaskTestCase(unittest.TestCase):
          follow_redirects=True)
         self.assertIn(b'Beautiful', response.data)
 
+    # Ensure that the about page loads
+    def test_about_page(self):
+        tester = app.test_client(self)
+        response = tester.get('/about', content_type='html/txt')
+        self.assertTrue(response.status_code, 200)
+
 
 
 if __name__ == '__main__':

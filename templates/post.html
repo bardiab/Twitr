@@ -4,7 +4,8 @@
   <div>
   <h1>What's on your mind?</h1>
     <br>
-      <form action="" method="post">
+    <form action="{{ url_for('login') }}" method="post", role="form">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
         <input type="text"
                placeholder="Title"
                name="title"
