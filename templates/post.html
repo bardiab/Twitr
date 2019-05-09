@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<article class="media content-section">
+  <div>
+  <h1>What's on your mind?</h1>
+    <br>
+      <form action="" method="post">
+        <input type="text"
+               placeholder="Title"
+               name="title"
+               value="{{request.form.title }}">
+        <p>
+        <br>
+        <textarea type="text"
+               rows="3"
+               cols="35"
+               name="content"
+               value="{{request.form.content }}"></textarea>
+        </p>
+        <input class="btn btn-default"
+               type="submit"
+               value="Post">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }} </p>
+      {% endif %}
+    </div>
+</article>
+{% endblock content %}

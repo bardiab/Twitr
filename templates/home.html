@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="media-body">
+<h3>Posts</h3>
+<hr>
+<div class="media-body">
+  <p><a href="/post">Add</a> a post.</p>
+</div>
+{% for post in posts %}
+<article class="media content-section">
+  <div class="media-body">
+    <div class="article-metadata">
+      <strong>{{ post.title }}</strong> <br>
+    </div>
+      {{ post.description }} <br>
+  </div>
+</article>
+{% endfor %}
+</div>
+  <div class="media-body">
+    <p>Click <a href="/logout">here</a> to logout.</p>
+      </div>
+
+{% endblock content %}
