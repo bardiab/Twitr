@@ -19,10 +19,6 @@ def welcome():
 
 @app.route('/home')
 def home():
-    # g.db = connect_db()
-    # curr = g.db.execute('select * from posts')
-    # posts = [dict(title=row[0], description=row[1]) for row in curr.fetchall()]
-    # g.db.close()
     posts = db.session.query(Post).all()
     return render_template('home.html', posts=posts)
 

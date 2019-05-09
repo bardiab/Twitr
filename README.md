@@ -4,20 +4,20 @@ A system that allows to both write and read logs via an API into a database.
 
 ### Prerequisites
 
-Your machine must be running python3, script will not run correctly on anything below python3. Please make sure that you have all the dependencies listed in requirements.txt
+Create a virtualenv and please make sure that you have all the dependencies listed in requirements.txt
 
 ### Background
 
-I built a small app to show posts by a user, built in python using the Flask framework.
-I have never worked with Flask before, so it was an interesting challenge. There
-are different API endpoints when navigating the site, and anytime an action is performed by the user, this is logged into a table called "Log" and located in the posts.db file.
+I built a small app to show posts(twits) by a user, built in python using the Flask framework. I have never worked with Flask before, so it was an interesting challenge. There are different API endpoints when navigating the site, and anytime an action is performed by the user, this is logged into a table called "Log" and located in the posts.db file.
+
+When finished navigating the application, logs may be viewed under the "Log" table in a sql visualizer of your choosing.
 
 ### Installing
 
 After downloading the project, in order to get the server up and running on your local host, run:
 
 ```
-python run.py
+python app.py
 ```
 
 From there you can log in to the website and view posts using the username 'bardia' and the password 'lol'.
@@ -32,5 +32,6 @@ From there you can log in to the website and view posts using the username 'bard
 ### Built With
 
 * [Atom](https://atom.io) - TextEditor
+* [Bootstrap](https://getbootstrap.com) - HTML/CSS Framework
 * [Flask](http://flask.pocoo.org) - Framework
 * [SQLAlchemy](https://www.sqlalchemy.org) - Database
