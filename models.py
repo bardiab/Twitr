@@ -7,7 +7,6 @@ class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
     description = db.Column(db.Text, nullable=False)
-    #date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
     def __init__(self, title, description):
         self.title = title
@@ -20,7 +19,7 @@ class Log(db.Model):
     __tablename__ = 'logs'
     id = db.Column(db.Integer, primary_key=True)
     logger = db.Column(db.String(100)) #name of logger
-    level = db.Column(db.String(100)) # info, debug, or error
+    level = db.Column(db.String(100))
     trace = db.Column(db.String(4096))
     msg = db.Column(db.String(4096))
     created_at = db.Column(db.DateTime, default=db.func.now())
