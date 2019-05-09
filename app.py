@@ -9,6 +9,7 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'efc8c0504858d673cfedcb19002ff421'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
@@ -74,6 +75,7 @@ import traceback
 import logging
 
 if __name__ == '__main__':
+    # Customizing logging handler to store into database
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
 
