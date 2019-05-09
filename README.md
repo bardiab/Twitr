@@ -20,7 +20,10 @@ After downloading the project, in order to get the server up and running on your
 python app.py
 ```
 
-From there you can log in to the website and view posts using the username 'bardia' and the password 'lol'.
+From there you can log in to the website and view posts using:
+'''username 'bardia'
+password 'lol'
+'''
 
 
 ### Requirements
