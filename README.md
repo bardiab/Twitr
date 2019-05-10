@@ -46,7 +46,10 @@ pip install -r /path/to/requirements.txt
 python app.py
 ```
 
-From there you can log in to the website and view posts using username 'bardia' and password 'lol'.
+From there you can log in to the website on your local machine and view posts using username 'bardia' and password 'lol'.
+```
+http://127.0.0.1:5000/
+```
 
 
 ### Requirements
